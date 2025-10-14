@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ED9121"
+        android:text="Totolotek" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj 6 liczb(od 1 do 49):" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editNumber1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:ems="2"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editNumber2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editNumber3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editNumber4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editNumber5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editNumber6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="2"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wynik:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/result1"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_margin="1sp"
+            android:backgroundTint="#FDAE44"
+            android:text="" />
+
+        <Button
+            android:id="@+id/result2"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_margin="1sp"
+            android:backgroundTint="#F4AB6A"
+            android:text="" />
+
+        <Button
+            android:id="@+id/result3"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_margin="1sp"
+            android:backgroundTint="#FDAE44"
+            android:text="" />
+
+        <Button
+            android:id="@+id/result4"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_margin="1sp"
+            android:backgroundTint="#F4AB6A"
+            android:text="" />
+
+        <Button
+            android:id="@+id/result5"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_margin="1sp"
+            android:backgroundTint="#FDAE44"
+            android:text="" />
+
+        <Button
+            android:id="@+id/result6"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:clickable="false"
+            android:layout_margin="1sp"
+            android:backgroundTint="#F4AB6A"
+            android:text="" />
+    </LinearLayout>
+
+        <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+            android:backgroundTint="#ED9121"
+            android:layout_margin="15sp"
+        android:text="Losuj" />
+</LinearLayout>
