@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         List<Integer> userNumbers = new ArrayList<>();
         List<Integer> randomNumbers = new ArrayList<>();
-        List<Integer>
+        List<Integer> hits = new ArrayList<>();
 
         Random random = new Random();
 
@@ -97,13 +97,14 @@ public class MainActivity extends AppCompatActivity {
                 for(int i = 0; i < 6; i++){
                     if(randomNumbers.contains(userNumbers.get(i))){
                         editNumber[i].setBackgroundColor(Color.parseColor("#008000"));
+                        hits.add(userNumbers.get(i));
                     }else{
                         editNumber[i].setBackgroundColor(Color.parseColor("#FF0000"));
                     }
                 }
 
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this, CHANNEL_ID);
-                builder.setSmallIcon(android.R.drawable.stat_notify_chat).setContentTitle("Totolotek wygrana").setContentText("").setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM));
+                builder.setSmallIcon(android.R.drawable.stat_notify_chat).setContentTitle("Totolotek wygrana").setContentText("Trafione losy" + hits).setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM));
                 if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
                     if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM){
                         requestPermissions(new String[] {Manifest.permission.POST_NOTIFICATIONS}, 1);
