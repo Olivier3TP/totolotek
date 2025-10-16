@@ -117,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 NotificationManagerCompat.from(MainActivity.this).notify(1, builder.build());
+
+                hits.clear();
             }
         });
     }
