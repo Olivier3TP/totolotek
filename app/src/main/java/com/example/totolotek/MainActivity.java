@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 while(randomNumbers.size() < 6){
-                    int number = random.nextInt(10) + 1;
+                    int number = random.nextInt(49) + 1;
                     if(!randomNumbers.contains(number)){
                         randomNumbers.add(number);
                     }
