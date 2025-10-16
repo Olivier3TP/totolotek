@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        createNotificationChannel();
+
         EditText[] editNumber = new EditText[6];
 
         editNumber[0] = findViewById(R.id.editNumber1);
@@ -80,12 +82,16 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Podaj wszystkie liczby", Toast.LENGTH_SHORT).show();
                 }
 
+                randomNumbers.clear();
+
                 while(randomNumbers.size() < 6){
                     int number = random.nextInt(49) + 1;
                     if(!randomNumbers.contains(number)){
                         randomNumbers.add(number);
                     }
                 }
+
+                randomNumbers.sort(null);
 
                 result1.setText(String.valueOf(randomNumbers.get(0)));
                 result2.setText(String.valueOf(randomNumbers.get(1)));

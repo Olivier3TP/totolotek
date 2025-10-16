@@ -98,7 +98,8 @@
             android:clickable="false"
             android:layout_margin="1sp"
             android:backgroundTint="#FDAE44"
-            android:text="" />
+            android:text=""
+            />
 
         <Button
             android:id="@+id/result2"
